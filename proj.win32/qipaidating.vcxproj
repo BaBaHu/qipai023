@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4E6A7A0E-DDD8-4BAA-8B22-C964069364ED}</ProjectGuid>
+    <ProjectName>qipaidating</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\cocos2d-x\cocos\2d\cocos2dx.props" />
+    <Import Project="..\..\cocos2d-x\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\cocos2d-x\cocos\2d\cocos2dx.props" />
+    <Import Project="..\..\cocos2d-x\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <SourcePath>$(SourcePath);</SourcePath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\Classes;$(ProjectDir)..\Classes\base;$(ProjectDir)..\Classes\web;$(ProjectDir)..\Classes\wxapi;$(ProjectDir)..\Classes\plazz;$(ProjectDir)..\Classes\utils;$(ProjectDir)..\Classes\libs;$(ProjectDir)..\Classes\voice;$(ProjectDir)..\IM_SDK\include;$(ProjectDir)..\sdk\libiconv\include;$(EngineRoot)external\win32-specific\zlib\include;$(EngineRoot)cocos\scripting\lua-bindings\auto;$(EngineRoot)cocos\scripting\lua-bindings\manual;$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot)external\unzip;$(EngineRoot)external\lua\lua;$(EngineRoot)external\lua\tolua;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)external\curl\include\win32;$(EngineRoot)extensions;$(EngineRoot)tools\simulator\libsimulator\lib;$(EngineRoot)tools\simulator\libsimulator\lib\protobuf-lite;$(EngineRoot);%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS_DEBUG;COCOS2D_DEBUG=1;GLFW_EXPOSE_NATIVE_WIN32;GLFW_EXPOSE_NATIVE_WGL;_USRLUASTATIC;_USRLIBSIMSTATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <ForcedIncludeFiles>algorithm</ForcedIncludeFiles>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories);$(_COCOS_LIB_PATH_WIN32_BEGIN);$(_COCOS_LIB_PATH_WIN32_END);F:\Project_D_Code\Project_D_Code\qipaidating\frameworks\runtime-src\IM_SDK\win32\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcurl_imp.lib;websockets.lib;libiconv.lib;LoginSDK.lib;yvpacket.lib;%(AdditionalDependencies);$(_COCOS_LIB_WIN32_BEGIN);$(_COCOS_LIB_WIN32_END)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib</IgnoreSpecificDefaultLibraries>
+      <ProgramDatabaseFile>$(ProjectDir)../../../simulator/win32/$(TargetName).pdb</ProgramDatabaseFile>
+      <OutputFile>$(ProjectDir)../../../simulator/win32/$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\include;$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>qipaidating.h</HeaderFileName>
+      <InterfaceIdentifierFileName>qipaidating_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>qipaidating_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)/qipaidating.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <CustomBuildStep>
+      <Command>if not exist "$(LocalDebuggerWorkingDirectory)" mkdir "$(LocalDebuggerWorkingDirectory)"
+xcopy /Y /Q "$(OutDir)*.dll" "$(LocalDebuggerWorkingDirectory)"
+xcopy /Y /Q "$(ProjectDir)..\Classes\ide-support\lang" "$(LocalDebuggerWorkingDirectory)"
+xcopy "$(ProjectDir)..\..\..\res" "$(LocalDebuggerWorkingDirectory)\res" /D /E /I /F /Y
+xcopy "$(ProjectDir)..\..\..\src" "$(LocalDebuggerWorkingDirectory)\src" /D /E /I /F /Y</Command>
+      <Outputs>$(TargetName).cab</Outputs>
+      <Inputs>$(TargetFileName)</Inputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <DisableLanguageExtensions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</DisableLanguageExtensions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\Classes;$(EngineRoot)external\win32-specific\zlib\include;$(EngineRoot)cocos\scripting\lua-bindings\auto;$(EngineRoot)cocos\scripting\lua-bindings\manual;$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot)external\lua\lua;$(EngineRoot)external\lua\tolua;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;$(EngineRoot)external\curl\include\win32;$(EngineRoot);$(EngineRoot)tools\simulator\libsimulator\lib;$(EngineRoot)tools\simulator\libsimulator\lib\protobuf-lite;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGSNDEBUG;GLFW_EXPOSE_NATIVE_WIN32;GLFW_EXPOSE_NATIVE_WGL;_USRLUASTATIC;_USRLIBSIMSTATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <ForcedIncludeFiles>algorithm</ForcedIncludeFiles>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories);$(_COCOS_LIB_PATH_WIN32_BEGIN);$(_COCOS_LIB_PATH_WIN32_END)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcurl_imp.lib;websockets.lib;%(AdditionalDependencies);$(_COCOS_LIB_WIN32_BEGIN);$(_COCOS_LIB_WIN32_END)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\include;$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>qipaidating.h</HeaderFileName>
+      <InterfaceIdentifierFileName>qipaidating_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>qipaidating_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)/qipaidating.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\base\CommonMutex.h" />
+    <ClInclude Include="..\Classes\base\lmd5.h" />
+    <ClInclude Include="..\Classes\base\lpack.h" />
+    <ClInclude Include="..\Classes\base\lsha1.h" />
+    <ClInclude Include="..\Classes\base\lua_crypt.h" />
+    <ClInclude Include="..\Classes\base\lua_lutils_manual.h" />
+    <ClInclude Include="..\Classes\base\lua_xxtea.h" />
+    <ClInclude Include="..\Classes\base\lua_zed.h" />
+    <ClInclude Include="..\Classes\base\lua_zlib.h" />
+    <ClInclude Include="..\Classes\ide-support\CodeIDESupport.h" />
+    <ClInclude Include="..\Classes\ide-support\lua_debugger.h" />
+    <ClInclude Include="..\Classes\ide-support\RuntimeLuaImpl.h" />
+    <ClInclude Include="..\Classes\JniCross\JniCallback.h" />
+    <ClInclude Include="..\Classes\JniCross\JniFun.h" />
+    <ClInclude Include="..\Classes\libs\Convert.h" />
+    <ClInclude Include="..\Classes\libs\coValue.h" />
+    <ClInclude Include="..\Classes\libs\crypt\base\aes.h" />
+    <ClInclude Include="..\Classes\libs\crypt\base\base64.h" />
+    <ClInclude Include="..\Classes\libs\crypt\base\MD5.h" />
+    <ClInclude Include="..\Classes\libs\crypt\coAes.h" />
+    <ClInclude Include="..\Classes\libs\crypt\coBase64.h" />
+    <ClInclude Include="..\Classes\libs\crypt\coMD5.h" />
+    <ClInclude Include="..\Classes\libs\crypt\cryptHeader.h" />
+    <ClInclude Include="..\Classes\libs\curl\coHttp.h" />
+    <ClInclude Include="..\Classes\libs\db\Db.h" />
+    <ClInclude Include="..\Classes\libs\JsonAide.h" />
+    <ClInclude Include="..\Classes\libs\libs.h" />
+    <ClInclude Include="..\Classes\libs\PacketAide.h" />
+    <ClInclude Include="..\Classes\libs\Url.h" />
+    <ClInclude Include="..\Classes\lua_module_register.h" />
+    <ClInclude Include="..\Classes\meEngine.h" />
+    <ClInclude Include="..\Classes\plazz\data\GlobalUnits.h" />
+    <ClInclude Include="..\Classes\plazz\data\GlobalUserInfo.h" />
+    <ClInclude Include="..\Classes\plazz\data\OptionParameter.h" />
+    <ClInclude Include="..\Classes\plazz\data\ServerListData.h" />
+    <ClInclude Include="..\Classes\plazz\df\Define.h" />
+    <ClInclude Include="..\Classes\plazz\df\DF.h" />
+    <ClInclude Include="..\Classes\plazz\df\DynamicPack.h" />
+    <ClInclude Include="..\Classes\plazz\df\Macro.h" />
+    <ClInclude Include="..\Classes\plazz\df\Module.h" />
+    <ClInclude Include="..\Classes\plazz\df\Packet.h" />
+    <ClInclude Include="..\Classes\plazz\df\Platform.h" />
+    <ClInclude Include="..\Classes\plazz\df\Property.h" />
+    <ClInclude Include="..\Classes\plazz\df\RightDefine.h" />
+    <ClInclude Include="..\Classes\plazz\df\ServerRule.h" />
+    <ClInclude Include="..\Classes\plazz\df\Struct.h" />
+    <ClInclude Include="..\Classes\plazz\df\types.h" />
+    <ClInclude Include="..\Classes\plazz\dialog\CGDialog.h" />
+    <ClInclude Include="..\Classes\plazz\dialog\CGDialogManager.h" />
+    <ClInclude Include="..\Classes\plazz\kernel\game\CClientKernel.h" />
+    <ClInclude Include="..\Classes\plazz\kernel\game\IClientKernel.h" />
+    <ClInclude Include="..\Classes\plazz\kernel\game\IClientKernelSink.h" />
+    <ClInclude Include="..\Classes\plazz\kernel\game\TimerEngine.h" />
+    <ClInclude Include="..\Classes\plazz\kernel\IChatSink.h" />
+    <ClInclude Include="..\Classes\plazz\kernel\IPropertySink.h" />
+    <ClInclude Include="..\Classes\plazz\kernel\IStringMessageSink.h" />
+    <ClInclude Include="..\Classes\plazz\kernel\server\CServerItem.h" />
+    <ClInclude Include="..\Classes\plazz\kernel\server\IServerItem.h" />
+    <ClInclude Include="..\Classes\plazz\kernel\server\IServerItemSink.h" />
+    <ClInclude Include="..\Classes\plazz\kernel\server\ITableFrame.h" />
+    <ClInclude Include="..\Classes\plazz\kernel\server\TableFrame.h" />
+    <ClInclude Include="..\Classes\plazz\kernel\user\ClientUserManager.h" />
+    <ClInclude Include="..\Classes\plazz\kernel\user\IClientUserItem.h" />
+    <ClInclude Include="..\Classes\plazz\kernel\user\IUserManagerSink.h" />
+    <ClInclude Include="..\Classes\plazz\msg\CMD_Baccarat.h" />
+    <ClInclude Include="..\Classes\plazz\msg\CMD_Commom.h" />
+    <ClInclude Include="..\Classes\plazz\msg\CMD_Correspond.h" />
+    <ClInclude Include="..\Classes\plazz\msg\CMD_FourMJ.h" />
+    <ClInclude Include="..\Classes\plazz\msg\CMD_FourSparrow.h" />
+    <ClInclude Include="..\Classes\plazz\msg\CMD_FourXZMJ.h" />
+    <ClInclude Include="..\Classes\plazz\msg\CMD_GameServer.h" />
+    <ClInclude Include="..\Classes\plazz\msg\CMD_LogonServer.h" />
+    <ClInclude Include="..\Classes\plazz\msg\CMD_MessageServer.h" />
+    <ClInclude Include="..\Classes\plazz\msg\CMD_Sparrow.h" />
+    <ClInclude Include="..\Classes\plazz\network\CSocketEngine.h" />
+    <ClInclude Include="..\Classes\plazz\network\CSocketMission.h" />
+    <ClInclude Include="..\Classes\plazz\network\ISocketEngine.h" />
+    <ClInclude Include="..\Classes\plazz\network\ISocketEngineSink.h" />
+    <ClInclude Include="..\Classes\plazz\network\QPCipher.h" />
+    <ClInclude Include="..\Classes\plazz\Plazz.h" />
+    <ClInclude Include="..\Classes\plazz\plazz\CGPCustomRoomMission.h" />
+    <ClInclude Include="..\Classes\plazz\plazz\CGPExchangeMission.h" />
+    <ClInclude Include="..\Classes\plazz\plazz\CGPFaceMission.h" />
+    <ClInclude Include="..\Classes\plazz\plazz\CGPIndividualMission.h" />
+    <ClInclude Include="..\Classes\plazz\plazz\CGPInsureMission.h" />
+    <ClInclude Include="..\Classes\plazz\plazz\CGPKefuMission.h" />
+    <ClInclude Include="..\Classes\plazz\plazz\CGPLoginMission.h" />
+    <ClInclude Include="..\Classes\plazz\plazz\CGPMachineMission.h" />
+    <ClInclude Include="..\Classes\plazz\plazz\CGPMessageMission.h" />
+    <ClInclude Include="..\Classes\plazz\plazz\CGPNoticeMsgMission.h" />
+    <ClInclude Include="..\Classes\plazz\plazz\CGPPasswordMission.h" />
+    <ClInclude Include="..\Classes\plazz\plazz\CGPTimeAwardMission.h" />
+    <ClInclude Include="..\Classes\plazz\plazz\CGPUnderWriteMission.h" />
+    <ClInclude Include="..\Classes\plazz\plazz\GPMission.h" />
+    <ClInclude Include="..\Classes\plazz\socket\Socket.h" />
+    <ClInclude Include="..\Classes\plazz\ui\BaijialeCardlogic.h" />
+    <ClInclude Include="..\Classes\plazz\ui\BaijialeClientKernelSink.h" />
+    <ClInclude Include="..\Classes\plazz\ui\BankUI.h" />
+    <ClInclude Include="..\Classes\plazz\ui\ClientKernelSink.h" />
+    <ClInclude Include="..\Classes\plazz\ui\CoChairView.h" />
+    <ClInclude Include="..\Classes\plazz\ui\CoTableView.h" />
+    <ClInclude Include="..\Classes\plazz\ui\CustonRoomUI.h" />
+    <ClInclude Include="..\Classes\plazz\ui\FourHZBClientKernelSink.h" />
+    <ClInclude Include="..\Classes\plazz\ui\FourMJClientKernelSink.h" />
+    <ClInclude Include="..\Classes\plazz\ui\FourXZMJClientKernelSink.h" />
+    <ClInclude Include="..\Classes\plazz\ui\LabelEx.h" />
+    <ClInclude Include="..\Classes\plazz\ui\LogonUI.h" />
+    <ClInclude Include="..\Classes\plazz\ui\MENetUtil.h" />
+    <ClInclude Include="..\Classes\plazz\ui\MTNotification.h" />
+    <ClInclude Include="..\Classes\plazz\ui\PayUI.h" />
+    <ClInclude Include="..\Classes\plazz\ui\ServerListUI.h" />
+    <ClInclude Include="..\Classes\plazz\ui\TableUI.h" />
+    <ClInclude Include="..\Classes\plazz\ui\TouchSprite.h" />
+    <ClInclude Include="..\Classes\plazz\ui\TwoHZBClientKernelSink.h" />
+    <ClInclude Include="..\Classes\plazz\utils\JsonMake.h" />
+    <ClInclude Include="..\Classes\plazz\utils\StringData.h" />
+    <ClInclude Include="..\Classes\plazz\utils\Timer.h" />
+    <ClInclude Include="..\Classes\tolua\lua_assetsmanager_test_sample.h" />
+    <ClInclude Include="..\Classes\tolua\lua_cocos2dx_custom.hpp" />
+    <ClInclude Include="..\Classes\tolua\lua_CustomInterface.h" />
+    <ClInclude Include="..\Classes\utils\MEFvMask.h" />
+    <ClInclude Include="..\Classes\utils\MECallBackListenerHelper.h" />
+    <ClInclude Include="..\Classes\utils\MEFileUtil.h" />
+    <ClInclude Include="..\Classes\utils\MEImageDownloader.h" />
+    <ClInclude Include="..\Classes\utils\MELog.h" />
+    <ClInclude Include="..\Classes\utils\MEResolution.h" />
+    <ClInclude Include="..\Classes\utils\MEShake.h" />
+    <ClInclude Include="..\Classes\utils\METimeUtils.h" />
+    <ClInclude Include="..\Classes\utils\MEUpdateEngine.h" />
+    <ClInclude Include="..\Classes\voice\DispatchMsgNode.h" />
+    <ClInclude Include="..\Classes\voice\YunVaSDK\CYVSyncQueue.h" />
+    <ClInclude Include="..\Classes\voice\YunVaSDK\yvListern.h" />
+    <ClInclude Include="..\Classes\voice\YunVaSDK\yvpacket_overloaded.h" />
+    <ClInclude Include="..\Classes\voice\YunVaSDK\YVRespondFactory.h" />
+    <ClInclude Include="..\Classes\voice\YunVaSDK\YVTool.h" />
+    <ClInclude Include="..\Classes\voice\YunVaSDK\YVTypeDef.h" />
+    <ClInclude Include="..\Classes\voice\YvVoiceManager.h" />
+    <ClInclude Include="..\Classes\web\HttpClientEx.h" />
+    <ClInclude Include="..\Classes\web\HttpRequestEx.h" />
+    <ClInclude Include="..\Classes\web\HttpResponseEx.h" />
+    <ClInclude Include="..\Classes\web\MCWebReq.h" />
+    <ClInclude Include="..\Classes\wxapi\codeConv.h" />
+    <ClInclude Include="..\Classes\wxapi\FvSingleton.h" />
+    <ClInclude Include="..\Classes\wxapi\MEWeiXinHelper.h" />
+    <ClInclude Include="..\Classes\wxapi\MissionWeiXin.h" />
+    <ClInclude Include="..\Classes\wxapi\transform.h" />
+    <ClInclude Include="..\Classes\wxapi\UtilityBase.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SimulatorWin.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\base\lmd5.c" />
+    <ClCompile Include="..\Classes\base\lpack.c" />
+    <ClCompile Include="..\Classes\base\lsha1.c" />
+    <ClCompile Include="..\Classes\base\lua_crypt.c" />
+    <ClCompile Include="..\Classes\base\lua_lutils_manual.cpp" />
+    <ClCompile Include="..\Classes\base\lua_xxtea.c" />
+    <ClCompile Include="..\Classes\base\lua_zed.c" />
+    <ClCompile Include="..\Classes\base\lua_zlib.c" />
+    <ClCompile Include="..\Classes\ide-support\lua_debugger.c" />
+    <ClCompile Include="..\Classes\ide-support\RuntimeLuaImpl.cpp" />
+    <ClCompile Include="..\Classes\JniCross\JniCallback.cpp" />
+    <ClCompile Include="..\Classes\JniCross\JniFun.cpp" />
+    <ClCompile Include="..\Classes\libs\Convert.cpp" />
+    <ClCompile Include="..\Classes\libs\crypt\base\aes.cpp" />
+    <ClCompile Include="..\Classes\libs\crypt\base\base64.cpp" />
+    <ClCompile Include="..\Classes\libs\crypt\base\MD5.cpp" />
+    <ClCompile Include="..\Classes\libs\crypt\coAes.cpp" />
+    <ClCompile Include="..\Classes\libs\crypt\coBase64.cpp" />
+    <ClCompile Include="..\Classes\libs\crypt\coMD5.cpp" />
+    <ClCompile Include="..\Classes\libs\curl\coHttp.cpp" />
+    <ClCompile Include="..\Classes\libs\db\Db.cpp" />
+    <ClCompile Include="..\Classes\libs\JsonAide.cpp" />
+    <ClCompile Include="..\Classes\libs\libs.cpp" />
+    <ClCompile Include="..\Classes\libs\PacketAide.cpp" />
+    <ClCompile Include="..\Classes\libs\Url.cpp" />
+    <ClCompile Include="..\Classes\plazz\data\GlobalUnits.cpp" />
+    <ClCompile Include="..\Classes\plazz\data\GlobalUserInfo.cpp" />
+    <ClCompile Include="..\Classes\plazz\data\OptionParameter.cpp" />
+    <ClCompile Include="..\Classes\plazz\data\ServerListData.cpp" />
+    <ClCompile Include="..\Classes\plazz\df\DF.cpp" />
+    <ClCompile Include="..\Classes\plazz\dialog\CGDialog.cpp" />
+    <ClCompile Include="..\Classes\plazz\dialog\CGDialogManager.cpp" />
+    <ClCompile Include="..\Classes\plazz\kernel\game\CClientKernel.cpp" />
+    <ClCompile Include="..\Classes\plazz\kernel\game\CClientKernelFrameSink.cpp" />
+    <ClCompile Include="..\Classes\plazz\kernel\game\CClientKernelUser.cpp" />
+    <ClCompile Include="..\Classes\plazz\kernel\game\TimerEngine.cpp" />
+    <ClCompile Include="..\Classes\plazz\kernel\server\CServerItem.cpp" />
+    <ClCompile Include="..\Classes\plazz\kernel\server\CServerItemAction.cpp" />
+    <ClCompile Include="..\Classes\plazz\kernel\server\CServerItemEventSocket.cpp" />
+    <ClCompile Include="..\Classes\plazz\kernel\server\CServerItemFrameSink.cpp" />
+    <ClCompile Include="..\Classes\plazz\kernel\server\CServerItemUser.cpp" />
+    <ClCompile Include="..\Classes\plazz\kernel\server\SocketMainConfig.cpp" />
+    <ClCompile Include="..\Classes\plazz\kernel\server\SocketMainGameFrame.cpp" />
+    <ClCompile Include="..\Classes\plazz\kernel\server\SocketMainInsure.cpp" />
+    <ClCompile Include="..\Classes\plazz\kernel\server\SocketMainLogon.cpp" />
+    <ClCompile Include="..\Classes\plazz\kernel\server\SocketMainManager.cpp" />
+    <ClCompile Include="..\Classes\plazz\kernel\server\SocketMainMatch.cpp" />
+    <ClCompile Include="..\Classes\plazz\kernel\server\SocketMainStatus.cpp" />
+    <ClCompile Include="..\Classes\plazz\kernel\server\SocketMainSystem.cpp" />
+    <ClCompile Include="..\Classes\plazz\kernel\server\SocketMainUser.cpp" />
+    <ClCompile Include="..\Classes\plazz\kernel\server\TableFrame.cpp" />
+    <ClCompile Include="..\Classes\plazz\kernel\user\ClientUserManager.cpp" />
+    <ClCompile Include="..\Classes\plazz\network\CSocketEngine.cpp" />
+    <ClCompile Include="..\Classes\plazz\network\CSocketMission.cpp" />
+    <ClCompile Include="..\Classes\plazz\network\QPCipher.cpp" />
+    <ClCompile Include="..\Classes\plazz\plazz\CGPCustomRoomMission.cpp" />
+    <ClCompile Include="..\Classes\plazz\plazz\CGPExchangeMission.cpp" />
+    <ClCompile Include="..\Classes\plazz\plazz\CGPFaceMission.cpp" />
+    <ClCompile Include="..\Classes\plazz\plazz\CGPIndividualMission.cpp" />
+    <ClCompile Include="..\Classes\plazz\plazz\CGPInsureMission.cpp" />
+    <ClCompile Include="..\Classes\plazz\plazz\CGPKefuMission.cpp" />
+    <ClCompile Include="..\Classes\plazz\plazz\CGPLoginMission.cpp" />
+    <ClCompile Include="..\Classes\plazz\plazz\CGPMachineMission.cpp" />
+    <ClCompile Include="..\Classes\plazz\plazz\CGPMessageMission.cpp" />
+    <ClCompile Include="..\Classes\plazz\plazz\CGPNoticeMsgMission.cpp" />
+    <ClCompile Include="..\Classes\plazz\plazz\CGPPasswordMission.cpp" />
+    <ClCompile Include="..\Classes\plazz\plazz\CGPTimeAwardMission.cpp" />
+    <ClCompile Include="..\Classes\plazz\plazz\CGPUnderWriteMission.cpp" />
+    <ClCompile Include="..\Classes\plazz\socket\Socket.cpp" />
+    <ClCompile Include="..\Classes\plazz\ui\BaijialeCardlogic.cpp" />
+    <ClCompile Include="..\Classes\plazz\ui\BaijialeClientKernelSink.cpp" />
+    <ClCompile Include="..\Classes\plazz\ui\BankUI.cpp" />
+    <ClCompile Include="..\Classes\plazz\ui\ClientKernelSink.cpp" />
+    <ClCompile Include="..\Classes\plazz\ui\CoChairView.cpp" />
+    <ClCompile Include="..\Classes\plazz\ui\CoTableView.cpp" />
+    <ClCompile Include="..\Classes\plazz\ui\CustonRoomUI.cpp" />
+    <ClCompile Include="..\Classes\plazz\ui\FourHZBClientKernelSink.cpp" />
+    <ClCompile Include="..\Classes\plazz\ui\FourMJClientKernelSink.cpp" />
+    <ClCompile Include="..\Classes\plazz\ui\FourXZMJClientKernelSink.cpp" />
+    <ClCompile Include="..\Classes\plazz\ui\LabelEx.cpp" />
+    <ClCompile Include="..\Classes\plazz\ui\LogonUI.cpp" />
+    <ClCompile Include="..\Classes\plazz\ui\MENetUtil.cpp" />
+    <ClCompile Include="..\Classes\plazz\ui\MTNotifcation.cpp" />
+    <ClCompile Include="..\Classes\plazz\ui\PayUI.cpp" />
+    <ClCompile Include="..\Classes\plazz\ui\ServerListUI.cpp" />
+    <ClCompile Include="..\Classes\plazz\ui\TableUI.cpp" />
+    <ClCompile Include="..\Classes\plazz\ui\TouchSprite.cpp" />
+    <ClCompile Include="..\Classes\plazz\ui\TwoHZBClientKernelSink.cpp" />
+    <ClCompile Include="..\Classes\plazz\utils\JsonMake.cpp" />
+    <ClCompile Include="..\Classes\plazz\utils\StringData.cpp" />
+    <ClCompile Include="..\Classes\plazz\utils\Timer.cpp" />
+    <ClCompile Include="..\Classes\tolua\lua_assetsmanager_test_sample.cpp" />
+    <ClCompile Include="..\Classes\tolua\lua_cocos2dx_custom.cpp" />
+    <ClCompile Include="..\Classes\tolua\lua_CustomInterface.cpp" />
+    <ClCompile Include="..\Classes\utils\MEFvMask.cpp" />
+    <ClCompile Include="..\Classes\utils\MECallBackListenerHelper.cpp" />
+    <ClCompile Include="..\Classes\utils\MEFileUtil.cpp" />
+    <ClCompile Include="..\Classes\utils\MEImageDownloader.cpp" />
+    <ClCompile Include="..\Classes\utils\MELog.cpp" />
+    <ClCompile Include="..\Classes\utils\MEResolution.cpp" />
+    <ClCompile Include="..\Classes\utils\MEShake.cpp" />
+    <ClCompile Include="..\Classes\utils\METimeUtils.cpp" />
+    <ClCompile Include="..\Classes\utils\MEUpdateEngine.cpp" />
+    <ClCompile Include="..\Classes\voice\DispatchMsgNode.cpp" />
+    <ClCompile Include="..\Classes\voice\YunVaSDK\YVRespondFactory.cpp" />
+    <ClCompile Include="..\Classes\voice\YunVaSDK\YVTool.cpp" />
+    <ClCompile Include="..\Classes\voice\YvVoiceManager.cpp" />
+    <ClCompile Include="..\Classes\web\HttpClientEx.cpp" />
+    <ClCompile Include="..\Classes\web\MCWebReq.cpp" />
+    <ClCompile Include="..\Classes\wxapi\MEWeiXinHelper.cpp" />
+    <ClCompile Include="..\Classes\wxapi\MissionWeiXin.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="SimulatorWin.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\game.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\cocos2d-x\cocos\2d\libcocos2d.vcxproj">
+      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\cocos2d-x\cocos\scripting\lua-bindings\proj.win32\libluacocos2d.vcxproj">
+      <Project>{9f2d6ce6-c893-4400-b50c-6db70cc2562f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\cocos2d-x\tools\simulator\libsimulator\proj.win32\libsimulator.vcxproj">
+      <Project>{001b324a-bb91-4e83-875c-c92f75c40857}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

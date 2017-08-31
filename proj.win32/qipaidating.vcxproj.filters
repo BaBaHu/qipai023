@@ -1,0 +1,905 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{fc5cb953-2953-4968-83b3-39e3ff951754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{037a9a02-b906-4cc5-ad98-304acd4e25ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{2d1d0979-58cd-4ab6-b91c-13650158f1fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\libs">
+      <UniqueIdentifier>{7207e987-d213-4e51-afa8-e925b14f46ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\libs\crypt">
+      <UniqueIdentifier>{1cab98a0-65f6-423b-8ec8-43b306ff065b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\libs\crypt\base">
+      <UniqueIdentifier>{a73b78e8-1243-4b8b-962b-1f9da28845c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\utils">
+      <UniqueIdentifier>{7fa6e881-85a5-4ae7-99f1-0ab66b91569a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\tolua">
+      <UniqueIdentifier>{f4309232-15a5-4799-b812-0ff6a6868e27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\plazz">
+      <UniqueIdentifier>{81f8cd69-b7f9-46e5-a5dd-82c6490b41b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\plazz\data">
+      <UniqueIdentifier>{0960c778-9dd7-4e52-a8b3-be4ced03bf57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\plazz\df">
+      <UniqueIdentifier>{ba186ff0-46d9-49c9-8ed2-6854d832e0f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\plazz\dialog">
+      <UniqueIdentifier>{c15bdea5-59db-426a-9f01-7f593fab942b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\plazz\kernel">
+      <UniqueIdentifier>{54955fbd-7476-4f16-80fe-ba43fc26c5b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\plazz\kernel\game">
+      <UniqueIdentifier>{18a4e38d-29aa-4471-a80d-b2b2be04c362}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\plazz\kernel\server">
+      <UniqueIdentifier>{c535605f-7dab-4528-848e-f211fb22a089}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\plazz\kernel\user">
+      <UniqueIdentifier>{b0a05722-3ad3-4e2c-b4ee-763949698986}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\plazz\msg">
+      <UniqueIdentifier>{38096d95-2f4f-405e-86f3-f25ef2457ee3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\plazz\network">
+      <UniqueIdentifier>{4305ea12-f792-494e-9808-c62b566cecd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\plazz\plazz">
+      <UniqueIdentifier>{5eb82a58-54e9-436f-913d-1f3ab8f92d8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\plazz\socket">
+      <UniqueIdentifier>{456c3a09-3dc6-4dbc-ad42-9e7f2f30bc8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\libs\db">
+      <UniqueIdentifier>{ac40baab-ecc1-403d-84a6-24737ae0e859}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\plazz\ui">
+      <UniqueIdentifier>{37019b9f-871f-45f3-b6d5-3e898d6078c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\plazz\utils">
+      <UniqueIdentifier>{f14bf0f0-a2b3-488e-9336-682720857e38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\wxapi">
+      <UniqueIdentifier>{76f2e9fa-c9d0-4ab6-9569-120825e29c3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\web">
+      <UniqueIdentifier>{a32e98e9-842c-41fd-aba2-0c728c442148}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\JniCross">
+      <UniqueIdentifier>{0d8bd366-d664-4eb1-a3dd-30f46730dd29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\base">
+      <UniqueIdentifier>{dd3faddf-4b47-4650-9f48-3165790df7c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\libs\curl">
+      <UniqueIdentifier>{9f8eb6f8-e75e-43e9-a7d8-9e603b775212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\voice">
+      <UniqueIdentifier>{90dbb14e-1f1a-48b2-8207-bcd408741a1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\voice\YunVaSDK">
+      <UniqueIdentifier>{5d11ae1c-00fe-44f7-b28e-205182af79e8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SimulatorWin.h" />
+    <ClInclude Include="stdafx.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ide-support\CodeIDESupport.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ide-support\lua_debugger.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ide-support\RuntimeLuaImpl.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\libs\crypt\coAes.h">
+      <Filter>Classes\libs\crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\libs\crypt\coBase64.h">
+      <Filter>Classes\libs\crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\libs\crypt\coMD5.h">
+      <Filter>Classes\libs\crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\libs\crypt\cryptHeader.h">
+      <Filter>Classes\libs\crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\libs\crypt\base\aes.h">
+      <Filter>Classes\libs\crypt\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\libs\crypt\base\base64.h">
+      <Filter>Classes\libs\crypt\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\libs\crypt\base\MD5.h">
+      <Filter>Classes\libs\crypt\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\meEngine.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tolua\lua_cocos2dx_custom.hpp">
+      <Filter>Classes\tolua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\lua_module_register.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tolua\lua_CustomInterface.h">
+      <Filter>Classes\tolua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\MECallBackListenerHelper.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\MELog.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\MEFileUtil.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\MEShake.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\data\GlobalUnits.h">
+      <Filter>Classes\plazz\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\data\GlobalUserInfo.h">
+      <Filter>Classes\plazz\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\data\OptionParameter.h">
+      <Filter>Classes\plazz\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\data\ServerListData.h">
+      <Filter>Classes\plazz\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\df\Define.h">
+      <Filter>Classes\plazz\df</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\df\DF.h">
+      <Filter>Classes\plazz\df</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\df\Macro.h">
+      <Filter>Classes\plazz\df</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\df\Module.h">
+      <Filter>Classes\plazz\df</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\df\Packet.h">
+      <Filter>Classes\plazz\df</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\df\Platform.h">
+      <Filter>Classes\plazz\df</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\df\Property.h">
+      <Filter>Classes\plazz\df</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\df\RightDefine.h">
+      <Filter>Classes\plazz\df</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\df\ServerRule.h">
+      <Filter>Classes\plazz\df</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\df\Struct.h">
+      <Filter>Classes\plazz\df</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\df\types.h">
+      <Filter>Classes\plazz\df</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\dialog\CGDialog.h">
+      <Filter>Classes\plazz\dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\kernel\game\CClientKernel.h">
+      <Filter>Classes\plazz\kernel\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\kernel\game\IClientKernel.h">
+      <Filter>Classes\plazz\kernel\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\kernel\game\IClientKernelSink.h">
+      <Filter>Classes\plazz\kernel\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\kernel\game\TimerEngine.h">
+      <Filter>Classes\plazz\kernel\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\kernel\server\CServerItem.h">
+      <Filter>Classes\plazz\kernel\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\kernel\server\IServerItem.h">
+      <Filter>Classes\plazz\kernel\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\kernel\server\IServerItemSink.h">
+      <Filter>Classes\plazz\kernel\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\kernel\server\ITableFrame.h">
+      <Filter>Classes\plazz\kernel\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\kernel\server\TableFrame.h">
+      <Filter>Classes\plazz\kernel\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\kernel\user\ClientUserManager.h">
+      <Filter>Classes\plazz\kernel\user</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\kernel\user\IClientUserItem.h">
+      <Filter>Classes\plazz\kernel\user</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\kernel\user\IUserManagerSink.h">
+      <Filter>Classes\plazz\kernel\user</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\kernel\IChatSink.h">
+      <Filter>Classes\plazz\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\kernel\IPropertySink.h">
+      <Filter>Classes\plazz\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\kernel\IStringMessageSink.h">
+      <Filter>Classes\plazz\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\msg\CMD_Commom.h">
+      <Filter>Classes\plazz\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\msg\CMD_GameServer.h">
+      <Filter>Classes\plazz\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\msg\CMD_LogonServer.h">
+      <Filter>Classes\plazz\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\network\CSocketEngine.h">
+      <Filter>Classes\plazz\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\network\CSocketMission.h">
+      <Filter>Classes\plazz\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\network\ISocketEngine.h">
+      <Filter>Classes\plazz\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\network\ISocketEngineSink.h">
+      <Filter>Classes\plazz\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\network\QPCipher.h">
+      <Filter>Classes\plazz\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\plazz\CGPExchangeMission.h">
+      <Filter>Classes\plazz\plazz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\plazz\CGPFaceMission.h">
+      <Filter>Classes\plazz\plazz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\plazz\CGPIndividualMission.h">
+      <Filter>Classes\plazz\plazz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\plazz\CGPInsureMission.h">
+      <Filter>Classes\plazz\plazz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\plazz\CGPKefuMission.h">
+      <Filter>Classes\plazz\plazz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\plazz\CGPLoginMission.h">
+      <Filter>Classes\plazz\plazz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\plazz\CGPMachineMission.h">
+      <Filter>Classes\plazz\plazz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\plazz\CGPMessageMission.h">
+      <Filter>Classes\plazz\plazz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\plazz\CGPPasswordMission.h">
+      <Filter>Classes\plazz\plazz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\plazz\CGPTimeAwardMission.h">
+      <Filter>Classes\plazz\plazz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\plazz\CGPUnderWriteMission.h">
+      <Filter>Classes\plazz\plazz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\plazz\GPMission.h">
+      <Filter>Classes\plazz\plazz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\socket\Socket.h">
+      <Filter>Classes\plazz\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\Plazz.h">
+      <Filter>Classes\plazz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\libs\db\Db.h">
+      <Filter>Classes\libs\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\libs\Convert.h">
+      <Filter>Classes\libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\libs\coValue.h">
+      <Filter>Classes\libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\libs\JsonAide.h">
+      <Filter>Classes\libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\libs\libs.h">
+      <Filter>Classes\libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\libs\PacketAide.h">
+      <Filter>Classes\libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\libs\Url.h">
+      <Filter>Classes\libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\ui\LogonUI.h">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\ui\MTNotification.h">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\ui\ServerListUI.h">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\ui\MENetUtil.h">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\ui\TableUI.h">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\ui\CoChairView.h">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\ui\CoTableView.h">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\ui\TouchSprite.h">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\ui\LabelEx.h">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\dialog\CGDialogManager.h">
+      <Filter>Classes\plazz\dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\ui\ClientKernelSink.h">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\msg\CMD_Sparrow.h">
+      <Filter>Classes\plazz\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\utils\JsonMake.h">
+      <Filter>Classes\plazz\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\utils\StringData.h">
+      <Filter>Classes\plazz\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\utils\Timer.h">
+      <Filter>Classes\plazz\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\ui\BankUI.h">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\METimeUtils.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\ui\TwoHZBClientKernelSink.h">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\ui\FourMJClientKernelSink.h">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\msg\CMD_FourMJ.h">
+      <Filter>Classes\plazz\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\ui\BaijialeClientKernelSink.h">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\msg\CMD_Baccarat.h">
+      <Filter>Classes\plazz\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\ui\BaijialeCardlogic.h">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\msg\CMD_Correspond.h">
+      <Filter>Classes\plazz\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\plazz\CGPCustomRoomMission.h">
+      <Filter>Classes\plazz\plazz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\ui\CustonRoomUI.h">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\df\DynamicPack.h">
+      <Filter>Classes\plazz\df</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\MEFvMask.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\wxapi\MissionWeiXin.h">
+      <Filter>Classes\wxapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\wxapi\FvSingleton.h">
+      <Filter>Classes\wxapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\web\MCWebReq.h">
+      <Filter>Classes\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\web\HttpClientEx.h">
+      <Filter>Classes\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\web\HttpRequestEx.h">
+      <Filter>Classes\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\web\HttpResponseEx.h">
+      <Filter>Classes\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\wxapi\UtilityBase.h">
+      <Filter>Classes\wxapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\JniCross\JniCallback.h">
+      <Filter>Classes\JniCross</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\JniCross\JniFun.h">
+      <Filter>Classes\JniCross</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\wxapi\MEWeiXinHelper.h">
+      <Filter>Classes\wxapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\MEImageDownloader.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\base\lmd5.h">
+      <Filter>Classes\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\base\lpack.h">
+      <Filter>Classes\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\base\lsha1.h">
+      <Filter>Classes\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\base\lua_crypt.h">
+      <Filter>Classes\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\base\lua_lutils_manual.h">
+      <Filter>Classes\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\base\lua_xxtea.h">
+      <Filter>Classes\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\base\lua_zed.h">
+      <Filter>Classes\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\base\lua_zlib.h">
+      <Filter>Classes\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\base\CommonMutex.h">
+      <Filter>Classes\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\ui\PayUI.h">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\plazz\CGPNoticeMsgMission.h">
+      <Filter>Classes\plazz\plazz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\msg\CMD_MessageServer.h">
+      <Filter>Classes\plazz\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tolua\lua_assetsmanager_test_sample.h">
+      <Filter>Classes\tolua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\libs\curl\coHttp.h">
+      <Filter>Classes\libs\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\MEUpdateEngine.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\voice\YunVaSDK\CYVSyncQueue.h">
+      <Filter>Classes\voice\YunVaSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\voice\YunVaSDK\yvListern.h">
+      <Filter>Classes\voice\YunVaSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\voice\YunVaSDK\yvpacket_overloaded.h">
+      <Filter>Classes\voice\YunVaSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\voice\YunVaSDK\YVRespondFactory.h">
+      <Filter>Classes\voice\YunVaSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\voice\YunVaSDK\YVTool.h">
+      <Filter>Classes\voice\YunVaSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\voice\YunVaSDK\YVTypeDef.h">
+      <Filter>Classes\voice\YunVaSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\voice\DispatchMsgNode.h">
+      <Filter>Classes\voice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\voice\YvVoiceManager.h">
+      <Filter>Classes\voice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\MEResolution.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\msg\CMD_FourSparrow.h">
+      <Filter>Classes\plazz\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\ui\FourHZBClientKernelSink.h">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\wxapi\transform.h">
+      <Filter>Classes\wxapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\wxapi\codeConv.h">
+      <Filter>Classes\wxapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\ui\FourXZMJClientKernelSink.h">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\plazz\msg\CMD_FourXZMJ.h">
+      <Filter>Classes\plazz\msg</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="SimulatorWin.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ide-support\lua_debugger.c">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ide-support\RuntimeLuaImpl.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\libs\crypt\coAes.cpp">
+      <Filter>Classes\libs\crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\libs\crypt\coBase64.cpp">
+      <Filter>Classes\libs\crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\libs\crypt\coMD5.cpp">
+      <Filter>Classes\libs\crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\libs\crypt\base\aes.cpp">
+      <Filter>Classes\libs\crypt\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\libs\crypt\base\base64.cpp">
+      <Filter>Classes\libs\crypt\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\libs\crypt\base\MD5.cpp">
+      <Filter>Classes\libs\crypt\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tolua\lua_cocos2dx_custom.cpp">
+      <Filter>Classes\tolua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tolua\lua_CustomInterface.cpp">
+      <Filter>Classes\tolua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\MECallBackListenerHelper.cpp">
+      <Filter>Classes\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\MELog.cpp">
+      <Filter>Classes\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\MEFileUtil.cpp">
+      <Filter>Classes\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\MEShake.cpp">
+      <Filter>Classes\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\data\GlobalUnits.cpp">
+      <Filter>Classes\plazz\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\data\GlobalUserInfo.cpp">
+      <Filter>Classes\plazz\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\data\OptionParameter.cpp">
+      <Filter>Classes\plazz\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\data\ServerListData.cpp">
+      <Filter>Classes\plazz\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\df\DF.cpp">
+      <Filter>Classes\plazz\df</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\dialog\CGDialog.cpp">
+      <Filter>Classes\plazz\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\kernel\game\CClientKernel.cpp">
+      <Filter>Classes\plazz\kernel\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\kernel\game\CClientKernelFrameSink.cpp">
+      <Filter>Classes\plazz\kernel\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\kernel\game\CClientKernelUser.cpp">
+      <Filter>Classes\plazz\kernel\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\kernel\game\TimerEngine.cpp">
+      <Filter>Classes\plazz\kernel\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\kernel\server\CServerItem.cpp">
+      <Filter>Classes\plazz\kernel\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\kernel\server\CServerItemAction.cpp">
+      <Filter>Classes\plazz\kernel\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\kernel\server\CServerItemEventSocket.cpp">
+      <Filter>Classes\plazz\kernel\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\kernel\server\CServerItemFrameSink.cpp">
+      <Filter>Classes\plazz\kernel\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\kernel\server\CServerItemUser.cpp">
+      <Filter>Classes\plazz\kernel\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\kernel\server\SocketMainConfig.cpp">
+      <Filter>Classes\plazz\kernel\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\kernel\server\SocketMainGameFrame.cpp">
+      <Filter>Classes\plazz\kernel\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\kernel\server\SocketMainInsure.cpp">
+      <Filter>Classes\plazz\kernel\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\kernel\server\SocketMainLogon.cpp">
+      <Filter>Classes\plazz\kernel\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\kernel\server\SocketMainManager.cpp">
+      <Filter>Classes\plazz\kernel\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\kernel\server\SocketMainMatch.cpp">
+      <Filter>Classes\plazz\kernel\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\kernel\server\SocketMainStatus.cpp">
+      <Filter>Classes\plazz\kernel\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\kernel\server\SocketMainSystem.cpp">
+      <Filter>Classes\plazz\kernel\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\kernel\server\SocketMainUser.cpp">
+      <Filter>Classes\plazz\kernel\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\kernel\server\TableFrame.cpp">
+      <Filter>Classes\plazz\kernel\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\kernel\user\ClientUserManager.cpp">
+      <Filter>Classes\plazz\kernel\user</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\network\CSocketEngine.cpp">
+      <Filter>Classes\plazz\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\network\CSocketMission.cpp">
+      <Filter>Classes\plazz\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\network\QPCipher.cpp">
+      <Filter>Classes\plazz\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\plazz\CGPExchangeMission.cpp">
+      <Filter>Classes\plazz\plazz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\plazz\CGPFaceMission.cpp">
+      <Filter>Classes\plazz\plazz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\plazz\CGPIndividualMission.cpp">
+      <Filter>Classes\plazz\plazz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\plazz\CGPInsureMission.cpp">
+      <Filter>Classes\plazz\plazz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\plazz\CGPKefuMission.cpp">
+      <Filter>Classes\plazz\plazz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\plazz\CGPLoginMission.cpp">
+      <Filter>Classes\plazz\plazz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\plazz\CGPMachineMission.cpp">
+      <Filter>Classes\plazz\plazz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\plazz\CGPMessageMission.cpp">
+      <Filter>Classes\plazz\plazz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\plazz\CGPPasswordMission.cpp">
+      <Filter>Classes\plazz\plazz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\plazz\CGPTimeAwardMission.cpp">
+      <Filter>Classes\plazz\plazz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\plazz\CGPUnderWriteMission.cpp">
+      <Filter>Classes\plazz\plazz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\socket\Socket.cpp">
+      <Filter>Classes\plazz\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\libs\db\Db.cpp">
+      <Filter>Classes\libs\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\libs\Convert.cpp">
+      <Filter>Classes\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\libs\JsonAide.cpp">
+      <Filter>Classes\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\libs\libs.cpp">
+      <Filter>Classes\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\libs\PacketAide.cpp">
+      <Filter>Classes\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\libs\Url.cpp">
+      <Filter>Classes\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\ui\LogonUI.cpp">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\ui\MTNotifcation.cpp">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\ui\ServerListUI.cpp">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\ui\MENetUtil.cpp">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\ui\TableUI.cpp">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\ui\CoChairView.cpp">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\ui\CoTableView.cpp">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\ui\TouchSprite.cpp">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\ui\LabelEx.cpp">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\dialog\CGDialogManager.cpp">
+      <Filter>Classes\plazz\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\ui\ClientKernelSink.cpp">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\utils\JsonMake.cpp">
+      <Filter>Classes\plazz\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\utils\StringData.cpp">
+      <Filter>Classes\plazz\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\utils\Timer.cpp">
+      <Filter>Classes\plazz\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\ui\BankUI.cpp">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\METimeUtils.cpp">
+      <Filter>Classes\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\ui\TwoHZBClientKernelSink.cpp">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\ui\FourMJClientKernelSink.cpp">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\ui\BaijialeClientKernelSink.cpp">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\ui\BaijialeCardlogic.cpp">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\plazz\CGPCustomRoomMission.cpp">
+      <Filter>Classes\plazz\plazz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\ui\CustonRoomUI.cpp">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\MEFvMask.cpp">
+      <Filter>Classes\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\wxapi\MissionWeiXin.cpp">
+      <Filter>Classes\wxapi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\web\MCWebReq.cpp">
+      <Filter>Classes\web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\web\HttpClientEx.cpp">
+      <Filter>Classes\web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\JniCross\JniCallback.cpp">
+      <Filter>Classes\JniCross</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\JniCross\JniFun.cpp">
+      <Filter>Classes\JniCross</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\wxapi\MEWeiXinHelper.cpp">
+      <Filter>Classes\wxapi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\MEImageDownloader.cpp">
+      <Filter>Classes\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\base\lmd5.c">
+      <Filter>Classes\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\base\lpack.c">
+      <Filter>Classes\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\base\lsha1.c">
+      <Filter>Classes\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\base\lua_crypt.c">
+      <Filter>Classes\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\base\lua_lutils_manual.cpp">
+      <Filter>Classes\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\base\lua_xxtea.c">
+      <Filter>Classes\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\base\lua_zed.c">
+      <Filter>Classes\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\base\lua_zlib.c">
+      <Filter>Classes\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\ui\PayUI.cpp">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\plazz\CGPNoticeMsgMission.cpp">
+      <Filter>Classes\plazz\plazz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tolua\lua_assetsmanager_test_sample.cpp">
+      <Filter>Classes\tolua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\libs\curl\coHttp.cpp">
+      <Filter>Classes\libs\curl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\MEUpdateEngine.cpp">
+      <Filter>Classes\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\voice\YunVaSDK\YVRespondFactory.cpp">
+      <Filter>Classes\voice\YunVaSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\voice\YunVaSDK\YVTool.cpp">
+      <Filter>Classes\voice\YunVaSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\voice\DispatchMsgNode.cpp">
+      <Filter>Classes\voice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\voice\YvVoiceManager.cpp">
+      <Filter>Classes\voice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\MEResolution.cpp">
+      <Filter>Classes\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\ui\FourHZBClientKernelSink.cpp">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\plazz\ui\FourXZMJClientKernelSink.cpp">
+      <Filter>Classes\plazz\ui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\game.ico" />
+  </ItemGroup>
+</Project>
